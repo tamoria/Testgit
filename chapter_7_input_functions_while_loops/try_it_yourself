@@ -1,0 +1,78 @@
+'''prompt = "\nWhat would you like on your pizza? "
+prompt += "\nEnter 'quit' when your order is complete. "
+
+while True:
+    message = input(prompt)
+
+    if message == 'quit':
+        break
+    else:
+        print("Adding " + message.title() + ".")'''
+
+'''prompt = "\nTo learn how much a ticket will cost, enter an age: "
+prompt += "\nEnter 'quit' when you are done reviewing ticket prices. "
+
+while True:
+    message = input(prompt)
+    
+    if int(message) < 3:
+        print("Your ticket is free!")
+    elif int(message) <= 12:
+        print("Your ticket will cost $10.")
+    elif int(message) > 12:
+        print("Your ticket will cost $15.")
+    elif message == 'quit':
+       break
+    else:
+        print("Oops, I don't think you entered a number, please try again.")'''
+
+
+sandwich_orders = ['blt', 'peanut butter and jelly', 'ham and cheese', 'pastrami', 'pastrami', 'pastrami']
+finished_sandwiches = []
+
+print(sandwich_orders)
+print("Sorry, we are all out of Pastrami sandwiches.")
+
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+print(sandwich_orders)
+
+while sandwich_orders:
+    working_sandwiches = sandwich_orders.pop()
+
+
+    print("Your sandwich, " + working_sandwiches.title() + ", is finished.")
+    finished_sandwiches.append(working_sandwiches)
+
+print("The following sandwiches are complete: ")
+for sandwich in finished_sandwiches:
+    print(sandwich.title())
+
+
+dream_vacations = {}
+polling_active = True
+
+while polling_active:
+    name = input("\nWhat is your name? ")
+    location = input("\nWhere would you like to spend your vacation? ")
+
+    dream_vacations[name] = location
+
+    repeat = input("/nIs there another person who would like to go on vacation? (yes/no) ")
+    if repeat == 'no':
+        polling_active = False
+
+print("--- Poll Results ---")
+for name, location in dream_vacations.items():
+    print(name.title() + " would like to go to " + location + " for vacation.")
+
+print(dream_vacations)
+
+
+
+
+
+
+
+

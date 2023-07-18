@@ -1,0 +1,38 @@
+# Start by creating a module -a file ending in .py
+# Write your function
+# open another file and add "import" followed by the name of the module
+# see pizza.py and make_pizza.py for example
+
+'''Importing Specific Functions
+
+general syntax: 
+
+from module_name import function_name
+
+You can import as many functions as you want:
+
+from module_name import function_0, function_1, ...
+
+Example:
+
+from pizza import make_pizza'''
+
+# Using as to Give a Function an Alias - in the case the name might conflict with other names in your program:
+
+'''from pizza import make_pizza as mp      # make_pizza is now called mp
+
+mp(16, 'tomato')'''
+
+# Using as to Give a Module an Alias
+
+'''import pizza as p
+
+p.make_pizza(12, 'cheese')'''
+
+# Importing All Functions in a Module
+
+'''from pizza import *'''
+
+from function_and_returning import greet_user
+
+greet_user('sam')
